@@ -23,7 +23,7 @@ WORKDIR /usr/app
 
 COPY ./composer* ./
 RUN composer install \
-#  --no-dev \
+#   --no-dev \
   --no-interaction \
   --prefer-dist \
   --ignore-platform-reqs \
