@@ -6,7 +6,7 @@ FROM node:18 as node
 
 WORKDIR /usr/app
 
-COPY ./package*.json ./
+COPY ./package.json ./
 COPY ./vite.config.js ./
 COPY ./resources ./resources
 COPY ./public ./public
