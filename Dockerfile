@@ -2,11 +2,11 @@
 # Build front-end assets
 ###########################################
 
-FROM node:18 as node
+FROM node:18-bullseye-slim as node
 
 WORKDIR /usr/app
 
-COPY ./package.json ./
+COPY ./package*.json ./
 COPY ./vite.config.js ./
 COPY ./resources ./resources
 COPY ./public ./public
